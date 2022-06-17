@@ -36,7 +36,7 @@ public class BrowserstackMobileDriver implements WebDriverProvider {
 
     private URL getBrowserstackUrl() {
         try {
-            return new URL(conf.basesUrl());
+            return new URL(conf.baseUrl());
         } catch (MalformedURLException e) {
             throw new RuntimeException(e);
         }

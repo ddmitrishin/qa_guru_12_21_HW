@@ -24,6 +24,6 @@ public interface BrowserstackKeys extends Config {
 
     String osVersion();
 
-    String basesUrl();
+    String baseUrl();
 
 }
