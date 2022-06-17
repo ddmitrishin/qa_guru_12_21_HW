@@ -11,7 +11,7 @@ import owner.BrowserstackKeys;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class BrowserstackMobileDrivers implements WebDriverProvider {
+public class BrowserstackMobileDriver implements WebDriverProvider {
     static BrowserstackKeys conf = ConfigFactory.create(BrowserstackKeys.class);
 
 
