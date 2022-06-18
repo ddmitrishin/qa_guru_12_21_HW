@@ -29,7 +29,7 @@ public class MobileTests extends TestBase {
     }
 
     @Test
-    @DisplayName("Open content")
+    @DisplayName("Check content")
     void openContent() {
         back();
         step("Search Beatles in Wikipedia", () -> {
