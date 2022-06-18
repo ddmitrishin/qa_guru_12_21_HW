@@ -2,6 +2,7 @@ package tests;
 
 import com.codeborne.selenide.CollectionCondition;
 import io.appium.java_client.AppiumBy;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
@@ -10,7 +11,9 @@ import static io.qameta.allure.Allure.step;
 
 @Tag("android")
 public class MobileTests extends TestBase {
+
     @Test
+    @DisplayName("Check Search input")
     void searchTest() {
         back();
         step("Search BrowserStack in Wikipedia", () -> {
@@ -22,5 +25,10 @@ public class MobileTests extends TestBase {
             $$(AppiumBy.id("org.wikipedia.alpha:id/page_list_item_title")).shouldHave(CollectionCondition.sizeGreaterThan(0));
         });
 
+    }
+
+    @Test
+    void openContent(){
+        back();
     }
 }
