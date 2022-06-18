@@ -42,7 +42,7 @@ public class MobileTests extends TestBase {
         });
 
         step("Verify title", () -> {
-            $(AppiumBy.className("android.widget.TextView")).shouldHave(Condition.text("The Beatles"));
+            $(AppiumBy.xpath("//android.widget.TextView[@text='The Beatles']")).shouldHave(Condition.text("The Beatles"));
         });
     }
 }
